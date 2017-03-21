@@ -147,10 +147,23 @@
 
 @media (max-width: 750px) {
   .burger-container {
-    display: block; }
+    display: block;
+    z-index: 9999999; }
   ul.desktop {
-    display: none; } }
+    display: none; }
+  #home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    margin: 0;
+    list-style: none;
+    padding: 8px 0 8px 14px; } }
 
 @media (min-width: 751px) {
   .burger-container {
-    display: none !important; } }
+    display: none !important; }
+  #home {
+    display: none; } }
