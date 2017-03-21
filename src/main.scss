@@ -6,7 +6,7 @@ $background-header: rgba(#000,0.8);
 $link-text: rgba(255,255,255,0.8);
 $link-active: rgba(255,255,255,0.4);
 
-.header {
+.header-menu {
     position: fixed;
     display: block;
     top: 0;
@@ -160,6 +160,12 @@ $link-active: rgba(255,255,255,0.4);
 @media(min-width: 751px) {
     .burger-container {
         display: none !important;
+    }
+    ul.menu{
+        display:none !important;
+    }
+    .header-menu {
+        height: 50px !important;
     }
     #home {
         display: none;

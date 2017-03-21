@@ -1,30 +1,30 @@
 (function ($) {
     var burger = document.querySelector('.burger-container'),
-        header = document.querySelector('.header');
-    var links = document.querySelectorAll('.menu-item a');
+        header = document.querySelector('.header-menu');
 
     burger.onclick = function () {
         header.classList.toggle('menu-opened');
     }
-    links.forEach(function (x) {
-        x.onclick = function () {
+    $('.header-menu .menu .menu-item a').click(function (x) {
             header.classList.toggle('menu-opened');
-        }
     });
 
     $(document).ready(function () {
-        $('a').each(function () {
-            var href = window.location.href.split('/');
-            href = '/'+href[href.length-1];
-            if ($(this).attr('href') === href ) {
+        var href = window.location.href.split('/');
+        href = href[href.length-1];
+        $('.header-menu a').each(function () {
+            var link = $(this).attr('href');
+            console.log(link);
+            if ( link === href ) {
                 $(this).addClass('active');
             }
         });
 
-        $('li a').click(
+        $('.header-menu li a').click(
             function (e) {
                 $('li a').removeClass('active');
-                $(e.currentTarget).addClass('active');
+                var href = $(e.currentTarget).attr('href');
+                $('a[href="'+href+'"]').addClass('active');
             }
         );
     });
