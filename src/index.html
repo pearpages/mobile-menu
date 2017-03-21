@@ -1,7 +1,16 @@
 <html>
+
 <head>
-<link rel="stylesheet" href="/main.css">
+    <script>
+        var head = document.getElementsByTagName("head");
+        var aTag = document.createElement('link');
+        aTag.setAttribute('rel', "stylesheet");
+        aTag.setAttribute('href', '/main.css?' + Math.random() * 1000);
+        head[0].appendChild(aTag);
+
+    </script>
 </head>
+
 <body>
     <div class="window">
         <div class="header">
@@ -11,7 +20,6 @@
                     <div class="bar btmBar"></div>
                 </div>
             </div>
-            <div class="icon icon-apple"></div>
             <ul class="menu">
                 <li class="menu-item"><a href="#">Mac</a></li>
                 <li class="menu-item"><a href="#">iPad</a></li>
@@ -21,7 +29,6 @@
                 <li class="menu-item"><a href="#">Music</a></li>
                 <li class="menu-item"><a href="#">Support</a></li>
             </ul>
-            <div class="shop icon icon-bag"></div>
         </div>
         <div class="content"> <img src="http://images.apple.com/v/ipad-air-2/c/images/overview/performance_large.png" alt="" />
             <h2>Thin. Light. Epic.</h2>
@@ -33,7 +40,8 @@
                 esse harum officiis, temporibus quae, delectus dolorem laboriosam eligendi exercitationem aliquam eveniet
                 autem facilis? Iure pariatur iusto ipsum aut, accusantium rerum. Ipsum officiis voluptatibus assumenda placeat
                 obcaecati. Voluptas explicabo optio repellendus minima sunt, ducimus suscipit, labore ratione eum officia
-                molestias!</p>
+                molestias!
+            </p>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem magnam aut corporis voluptate! Et similique
                 iste, molestiae illo nemo adipisci molestias, iure accusantium, sit expedita fugiat aliquam dolore! Odit
                 perferendis, earum quaerat inventore ut error placeat sunt dignissimos dicta.</p>
