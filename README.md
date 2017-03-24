@@ -1,8 +1,8 @@
 # Mobile Menu
 
-[foto1](./images/desktop-menu.png)
-[foto2](./images/mobile-menu-closed.png)
-[foto3](./images/mobile-menu-poned.png)
+[alt desktop menu](./images/desktop-menu.png)
+[alt mobile menu closed](./images/mobile-menu-closed.png)
+[alt mobile menu opened](./images/mobile-menu-opened.png)
 
 ## Run
 
